@@ -6,8 +6,12 @@ check50:
           stdout: hello, world!
       seconds:
         -  run: python seconds.py
-          stdin: 111234
-          stdout: hello, world!
+          stdin: 200000
+          stdout: |
+            Days: 2
+            Hours: 7
+            Minutes: 33
+            Seconds: 20
   files: &check50_files
     - !exclude "*"
     - !include indoor.py
