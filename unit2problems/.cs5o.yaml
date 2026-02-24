@@ -4,6 +4,10 @@ check50:
         - run: python indoor.py
           stdin: Hello, world!
           stdout: hello, world!
+      seconds:
+        -  run: python seconds.py
+          stdin: 111234
+          stdout: hello, world!
   files: &check50_files
     - !exclude "*"
     - !include indoor.py
