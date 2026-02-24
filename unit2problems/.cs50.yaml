@@ -5,7 +5,7 @@ check50:
           stdin: Hello, world!
           stdout: hello, world!
       seconds:
-        -  run: python seconds.py
+        - run: python seconds.py
           stdin: 200000
           stdout: |
             Days: 2
