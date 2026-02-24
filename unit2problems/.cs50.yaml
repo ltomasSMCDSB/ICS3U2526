@@ -1,4 +1,4 @@
-irecheck50:
+check50:
   checks:
       indoor:
         - run: python indoor.py
