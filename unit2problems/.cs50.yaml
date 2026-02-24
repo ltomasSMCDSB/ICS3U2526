@@ -1,4 +1,4 @@
-check50:
+irecheck50:
   checks:
       indoor:
         - run: python indoor.py
@@ -14,7 +14,7 @@ check50:
             Seconds: 20
   files: &check50_files
     - !exclude "*"
-    - !include indoor.py
-    - !include seconds.py
+    - !require indoor.py
+    - !require seconds.py
 submit50:
   files: *check50_files
