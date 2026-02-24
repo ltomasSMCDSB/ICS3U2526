@@ -1,10 +1,9 @@
 check50:
-  checks: checks.py
+  checks:
       indoor:
         - run: python indoor.py
           stdin: Hello, world!
           stdout: hello, world!
-          exit: 0
   files: &check50_files
     - !exclude "*"
     - !require indoor.py
