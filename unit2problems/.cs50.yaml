@@ -10,7 +10,7 @@ check50:
             Days: 2
             Hours: 7
             Minutes: 33
-            Seconds: 22
+            Seconds: 20
   files: &check50_files
     - !exclude "*"
     - !require indoor.py
