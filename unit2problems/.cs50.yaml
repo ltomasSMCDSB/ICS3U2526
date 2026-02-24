@@ -1,0 +1,20 @@
+check50:
+  checks:
+      indoor:
+        - run: python indoor.py
+          stdin: Hello, world!
+          stdout: hello, world!
+      seconds:
+        -  run: python seconds.py
+          stdin: 200000
+          stdout: |
+            Days: 2
+            Hours: 7
+            Minutes: 33
+            Seconds: 20
+  files: &check50_files
+    - !exclude "*"
+    - !include indoor.py
+    - !include seconds.py
+submit50:
+  files: *check50_files
