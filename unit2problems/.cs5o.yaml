@@ -6,6 +6,7 @@ check50:
           stdout: hello, world!
   files: &check50_files
     - !exclude "*"
-    - !require indoor.py
+    - !include indoor.py
+    - !include seconds.py
 submit50:
   files: *check50_files
