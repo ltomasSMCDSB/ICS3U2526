@@ -19,8 +19,8 @@ check50:
         exit: 0
   files: &check50_files
     - !exclude "*"
-    - !require hello.py
-    - !require indoor.py
-    - !require seconds.py
+    - !include hello.py
+    - !include indoor.py
+    - !include seconds.py
 submit50:
   files: *check50_files
