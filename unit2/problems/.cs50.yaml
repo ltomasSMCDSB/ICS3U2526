@@ -17,7 +17,7 @@ check50:
           Minutes: 33
           Seconds: 20
         exit: 0
-files: &check50_files
+  files: &check50_files
     - !exclude "*"
     - !require hello.py
     - !require indoor.py
