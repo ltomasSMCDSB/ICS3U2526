@@ -9,3 +9,11 @@ check50:
         stdin: Hello, world!
         stdout: hello, world!
         exit: 0
+    seconds:
+      - run: python3 seconds.py
+        stdout: |
+          Days: 2
+          Hours: 7
+          Minutes: 33
+          Seconds: 20
+        exit: 0
