@@ -1,9 +1,8 @@
 check50:
   checks:
-      hello world:
+      indoor:
         - run: python indoor.py
-          stdin: 
-            - Hello, world!
+          stdin: Hello, world!
           stdout: hello, world!
           exit: 0
   files: &check50_files
