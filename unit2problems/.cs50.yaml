@@ -4,16 +4,8 @@ check50:
         - run: python indoor.py
           stdin: Hello, world!
           stdout: hello, world!
-      seconds:
-        - run: python seconds.py
-          stdout: |
-            Days: 2
-            Hours: 7
-            Minutes: 33
-            Seconds: 20
   files: &check50_files
     - !exclude "*"
     - !require indoor.py
-    - !require seconds.py
 submit50:
   files: *check50_files
