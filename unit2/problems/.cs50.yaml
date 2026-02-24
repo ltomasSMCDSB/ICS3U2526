@@ -5,7 +5,7 @@ check50:
         stdout: Hello, world!
         exit: 0
     indoor:
-      - run python3 indoor.py
+      - run: python3 indoor.py
         stdin: Hello, world!
         stdout: hello, world!
         exit: 0
