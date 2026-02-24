@@ -10,7 +10,7 @@ check50:
           stdout: Days: 2
   files: &check50_files
     - !exclude "*"
-    - !require indoor.py
-    - !require seconds.py
+    - !include indoor.py
+    - !include seconds.py
 submit50:
   files: *check50_files
