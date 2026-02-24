@@ -3,7 +3,7 @@ check50:
       indoor:
         - run: python indoor.py
           stdin: Hello, world!
-          stdout: hello, world!1
+          stdout: hello, world!
   files: &check50_files
     - !exclude "*"
     - !require indoor.py
