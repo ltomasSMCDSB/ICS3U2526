@@ -1,5 +1,5 @@
 check50:
-  checks:
+  checks: checks.py
       indoor:
         - run: python indoor.py
           stdin: Hello, world!
