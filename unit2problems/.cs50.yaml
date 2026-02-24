@@ -11,6 +11,5 @@ check50:
   files: &check50_files
     - !exclude "*"
     - !include indoor.py
-    - !include seconds.py
 submit50:
   files: *check50_files
