@@ -34,13 +34,16 @@ check50:
         exit: 0
     bintodec:
       - run: python3 bintodec.py
-        stdin: Hello, world!
-        stdout: hello, world!
+        stdin: 01101101
+        stdout: 109
         exit: 0
     swapvar:
       - run: python3 digits.py
-        stdin: 01101101
-        stdout: 109
+        stdin: 3
+        stdin: 5
+        stdout: |
+          x = 5
+          y = 3
         exit: 0
   files: &check50_files
     - !exclude "*"
