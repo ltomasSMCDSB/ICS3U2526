@@ -11,12 +11,12 @@ check50:
         exit: 0
     banner:
       - run: python3 banner.py
-        stdin: "#"
+        stdin: _
         stdin: hello
         stdout: |
-          ######################
-          #       hello        #
-          ######################
+          ______________________
+          _       hello        _
+          ______________________
         exit: 0
     digits:
       - run: python3 digits.py
