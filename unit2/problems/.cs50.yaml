@@ -1,26 +1,54 @@
 check50:
   checks:
-    hello world:
-      - run: python3 hello.py
-        stdout: Hello, world!
+    tip:
+      - run: python3 tip.py
+        stdin: 86.40
+        stdin: 4
+        stdin: 15
+        stdout: |
+          Total Bill: $99.36
+          Price per person: $24.84
         exit: 0
-#    indoor:
-#      - run: python3 indoor.py
-#        stdin: Hello, world!
-#        stdout: hello, world!
-#        exit: 0
-#    seconds:
-#      - run: python3 seconds.py
-#        stdout: |
-#          Days: 2
-#          Hours: 7
-#          Minutes: 33
-#          Seconds: 20
-#        exit: 0
+    banner:
+      - run: python3 banner.py
+        stdin: "#"
+        stdin: hello
+        stdout: |
+          ######################
+          #       hello        #
+          ######################
+        exit: 0
+    digits:
+      - run: python3 digits.py
+        stdin: 4829
+        stdout: 23
+        exit: 0
+    username:
+      - run: python3 username.py
+        stdin: Allison
+        stdin: Smith
+        stdin: 2008
+        stdout: |
+          username: allsmi08
+          password: SONITH18
+        exit: 0
+    bintodec:
+      - run: python3 bintodec.py
+        stdin: Hello, world!
+        stdout: hello, world!
+        exit: 0
+    swapvar:
+      - run: python3 digits.py
+        stdin: 01101101
+        stdout: 109
+        exit: 0
   files: &check50_files
     - !exclude "*"
-    - !include hello.py
-#    - !include indoor.py
-#    - !include seconds.py
-submit50:
+    - !include tip.py
+    - !include banner.py
+    - !include digits.py
+    - !include username.py
+    - !include bintodec.py
+    - !include swapvar.py
+ubmit50:
   files: *check50_files
