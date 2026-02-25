@@ -22,9 +22,7 @@ check50:
         exit: 0
     username:
       - run: python3 username.py
-        stdin: Allison
-        stdin: Smith
-        stdin: 2008
+        stdin: Allison\nSmith\n2008
         stdout: |
           username: allsmi08
           password: SONITH18
