@@ -38,7 +38,7 @@ check50:
         stdout: 109
         exit: 0
     swapvar:
-      - run: python3 digits.py
+      - run: python3 swapvar.py
         stdin: 3
         stdin: 5
         stdout: |
