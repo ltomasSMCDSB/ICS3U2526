@@ -53,5 +53,5 @@ check50:
     - !include username.py
     - !include bintodec.py
     - !include swapvar.py
-ubmit50:
+submit50:
   files: *check50_files
