@@ -11,8 +11,7 @@ check50:
         exit: 0
     banner:
       - run: python3 banner.py
-        stdin: _
-        stdin: hello
+        stdin: _\nhello\n
         stdout: |
           ______________________
           _       hello        _
