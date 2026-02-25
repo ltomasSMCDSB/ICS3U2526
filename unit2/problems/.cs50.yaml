@@ -34,8 +34,7 @@ check50:
         exit: 0
     swapvar:
       - run: python3 swapvar.py
-        stdin: 3
-        stdin: 5
+        stdin: 3\n5
         stdout: |
           x = 5
           y = 3
