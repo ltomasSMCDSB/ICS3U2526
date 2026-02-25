@@ -14,9 +14,9 @@ check50:
         stdin: @
         stdin: hello
         stdout: |
-          @@@@@@@@@@@@@@@@@@@@@@
-          @       hello        @
-          @@@@@@@@@@@@@@@@@@@@@@
+          !!!!!!!!!!!!!!!!!!!!!!
+          !       hello        !
+          !!!!!!!!!!!!!!!!!!!!!!
         exit: 0
     digits:
       - run: python3 digits.py
