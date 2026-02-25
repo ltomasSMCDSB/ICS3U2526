@@ -1,5 +1,5 @@
 check50:
-  checks:
+  checks: checks.py
     tip:
       - run: python3 tip.py
         stdin: 86.40
