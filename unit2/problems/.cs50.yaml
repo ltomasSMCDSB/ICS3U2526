@@ -2,9 +2,7 @@ check50:
   checks:
     tip:
       - run: python3 tip.py
-        stdin: 86.40
-        stdin: 4
-        stdin: 15
+        stdin: 86.40\n4\n15
         stdout: |
           Total Bill: $99.36
           Price per person: $24.84
