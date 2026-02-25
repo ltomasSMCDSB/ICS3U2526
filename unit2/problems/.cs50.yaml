@@ -29,7 +29,7 @@ check50:
         exit: 0
     bintodec:
       - run: python3 bintodec.py
-        stdin: 01101101
+        stdin: "01101101"
         stdout: 109
         exit: 0
     swapvar:
