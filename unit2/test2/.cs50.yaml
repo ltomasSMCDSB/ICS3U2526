@@ -1,1 +1,25 @@
-
+check50:
+  checks:
+  files: &check50_files
+    - !exclude "*"
+    - !include 1messenger.py
+    - !include 1handshake.py
+    - !include 1arearec.py
+    - !include 1joiner.py
+    - !include 2fahrenheit.py
+    - !include 2secret.py
+    - !include 2shopping.py
+    - !include 2name.py
+    - !include 2indoor.py
+    - !include 3banner2.py
+    - !include 3credit.py
+    - !include 3cone.py
+    - !include 3mixednum.py
+    - !include 3cashier.py
+    - !include 4middle.py
+    - !include 3user.py
+    - !include 4mixednum.py
+    - !include 4receipt.py
+    - !include 4average.py
+submit50:
+  files: *check50_files
