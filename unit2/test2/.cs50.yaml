@@ -17,7 +17,7 @@ check50:
     - !include 3mixednum.py
     - !include 3cashier.py
     - !include 4middle.py
-    - !include 3user.py
+    - !include 4user.py
     - !include 4mixednum.py
     - !include 4receipt.py
     - !include 4average.py
