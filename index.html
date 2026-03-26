@@ -1,33 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>My GitHub CLI Game</title>
-    
-    <link rel="stylesheet" href="https://pyscript.net/releases/2024.1.1/core.css" />
+    <title>My Python CLI Game</title>
+    <link rel="stylesheet" href="https://pyscript.net/releases/2024.1.1/core.css">
     <script type="module" src="https://pyscript.net/releases/2024.1.1/core.js"></script>
-
-    <py-config>
-        [[fetch]]
-        from = "https://raw.githubusercontent.com/ltomasSMCDSB/ICS3U2526/refs/heads/main/unit2/"
-        files = ["hello.py"]
-    </py-config>
-
-    <style>
-        body { background-color: #121212; color: #00ff00; font-family: 'Courier New', Courier, monospace; padding: 20px; }
-        py-terminal { display: block; background-color: black; border: 1px solid #333; }
-    </style>
 </head>
 <body>
-    <h1>Remote GitHub Game</h1>
-
-    <script type="py" terminal>
-        var = input("Enter your name")
-        print("Hello " + var)
-
-# If your game code is wrapped in a function, call it here:
-# your_game.main()
+    <h1>Welcome to my Game</h1>
+    
+    <script type="py">
+        print("Starting game...")
+        name = input("What is your name? ")
+        print(f"Hello {name}, welcome to the adventure!")
     </script>
 </body>
 </html>
