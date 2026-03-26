@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>My GitHub CLI Game</title>
+    
+    <link rel="stylesheet" href="https://pyscript.net/releases/2024.1.1/core.css" />
+    <script type="module" src="https://pyscript.net/releases/2024.1.1/core.js"></script>
+
+    <py-config>
+        [[fetch]]
+        from = "https://raw.githubusercontent.com/USERNAME/REPO/main/"
+        files = ["your_game.py"]
+    </py-config>
+
+    <style>
+        body { background-color: #121212; color: #00ff00; font-family: 'Courier New', Courier, monospace; padding: 20px; }
+        py-terminal { display: block; background-color: black; border: 1px solid #333; }
+    </style>
+</head>
+<body>
+    <h1>Remote GitHub Game</h1>
+
+    <script type="py" terminal>
+import your_game
+
+# If your game code is wrapped in a function, call it here:
+# your_game.main()
+    </script>
+</body>
+</html>
