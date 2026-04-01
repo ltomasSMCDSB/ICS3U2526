@@ -1,0 +1,21 @@
+check50:
+  checks:
+  files: &check50_files
+    - !exclude "*"
+    - !include 1password.py
+    - !include 1five.py
+    - !include 1userinput.py
+    - !include 1protection.py
+    - !include 2login.py
+    - !include 2even.py
+    - !include 2countdown.py
+    - !include 2total.py
+    - !include 2input.py
+    - !include 3bouncer.py
+    - !include 3maxvalue.py
+    - !include 3lockout.py
+    - !include 4guess.py
+    - !include 4atm.py
+    - !include 4grid.py
+submit50:
+  files: *check50_files
