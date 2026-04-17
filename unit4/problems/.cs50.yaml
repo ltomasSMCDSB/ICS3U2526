@@ -2,6 +2,10 @@ check50:
   checks:
   files: &check50_files
     - !exclude "*"
-    - !include rpgquest.py
+    - !include card_deck.py
+    - !include shuffle.py
+    - !include hangman.py
+    - !include wordle.py
+    - !include tictactoe.py
 submit50:
   files: *check50_files
