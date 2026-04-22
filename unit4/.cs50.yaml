@@ -1,0 +1,23 @@
+check50:
+  checks:
+  files: &check50_files
+    - !exclude "*"
+    - !include 1handofcards.py
+    - !include 1drawacard.py
+    - !include 1guessed.py
+    - !include 1lettercheck.py
+    - !include 1zerototwelve.py
+    - !include 2random_numbers.py
+    - !include 2players.py
+    - !include 2tally.py
+    - !include 2replace.py
+    - !include 2nodupilcates.py
+    - !include 3discard.py
+    - !include 3inthelist.py
+    - !include 3scoreboard.py
+    - !include 4shuffle.py
+    - !include 4hangman.py
+    - !include 4deal.py
+    - !include 4maxmineven.py
+submit50:
+  files: *check50_files
