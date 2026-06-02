@@ -1,0 +1,7 @@
+check50:
+  checks:
+  files: &check50_files
+    - !exclude "*"
+    - !include unit6_project.py
+submit50:
+  files: *check50_files
