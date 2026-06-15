@@ -1,0 +1,7 @@
+check50:
+  checks:
+  files: &check50_files
+    - !exclude "*"
+    - !include ics3u_cct.py
+submit50:
+  files: *check50_files
