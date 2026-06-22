@@ -1,0 +1,29 @@
+check50:
+  checks:
+  files: &check50_files
+    - !exclude "*"
+    - !include 1say_hello.py
+    - !include 1calculate.py
+    - !include 1demposition.py
+    - !include 1boolean.py
+    - !include 1read_txt.py
+    - !include 1write_txt.py
+    - !include 2final_mark.py
+    - !include 2circle.py
+    - !include 2func_loop.py
+    - !include 2whitespace.py
+    - !include 2products.py
+    - !include 2error.py
+    - !include 2units.py
+    - !include 3validate.py
+    - !include 3search_and_count.py
+    - !include 3high_score.py
+    - !include 3inventory_alert.py
+    - !include 3average_multiple.py
+    - !include 3history_balance.py
+    - !include 4grade_analyzer.py
+    - !include 4inventory.py
+    - !include 4finance.py
+    - !include 4user_account.py
+submit50:
+  files: *check50_files
